@@ -36,6 +36,7 @@ class CryptoAdapter(var cryptoWallet:ArrayList<CryptoWallet>): BaseRecyclerAdapt
 
         val formatter = DecimalFormat("###,###,###")
 
+        // get drawable icon package name
         val drawables = holder.itemView.context.resources.getIdentifier(cryptoWallet[position].cryptoName,"drawable",
             holder.itemView.context.packageName
         )
@@ -45,7 +46,7 @@ class CryptoAdapter(var cryptoWallet:ArrayList<CryptoWallet>): BaseRecyclerAdapt
         percent.text = cryptoWallet[position].changePercent.toString()
         property.text = cryptoWallet[position].propertySize.toString() + cryptoWallet[position].cryptoSymbol
         propertyAmount.text = "$" + formatter.format(cryptoWallet[position].propertyAmount)
-        lineChart.setData(cryptoWallet[position].lineData) //set Chart datas
+        lineChart.setData(cryptoWallet[position].lineData) //set lineChart datas
 
         //set lineChart color and percent text color
         when {
@@ -63,6 +64,7 @@ class CryptoAdapter(var cryptoWallet:ArrayList<CryptoWallet>): BaseRecyclerAdapt
             }
         }
 
+        // use Glide set item logo
         Glide.with(holder.itemView.context).load(drawables).into(logoImage)
     }
 
