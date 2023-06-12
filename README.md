@@ -6,7 +6,7 @@ design crypto ui demo
 ## Login
 ![Screenshot_1686539548](https://github.com/code09128/CryptoUI/assets/32324308/57961f69-27ee-4377-82b0-3f9066df784f)
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -146,7 +146,7 @@ design crypto ui demo
 ## MainPage
 ![Screenshot_1686539567](https://github.com/code09128/CryptoUI/assets/32324308/a3f011fe-70c5-4c05-89e1-5fb3661df86d)
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -579,3 +579,65 @@ design crypto ui demo
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
+## Button Style
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#B74CFC" android:endColor="#6E56E2" android:angle="0"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</selector>
+```
+
+## EDIT TEXT Style
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp"/>
+            <solid android:color="#281A56"/>
+            <stroke android:color="#281A56" android:width="1dp" />
+        </shape>
+    </item>
+</selector>
+```
+
+## Floating button
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient android:angle="45" android:endColor="#5e4edd" android:startColor="#974ebd" />
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/float_icon"
+        android:top="15dp"
+        android:right="15dp"
+        android:left="15dp"
+        android:bottom="15dp"/>
+</layer-list>
+```
+
+## MainPage top background
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#5e4edd"
+                android:endColor="#974ebd"
+                android:angle="-45"/>
+
+            <corners android:radius="45dp"/>
+        </shape>
+    </item>
+</selector>
+```
