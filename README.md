@@ -1,10 +1,19 @@
 # CryptoUI
 design crypto ui demo
 
-### design demo UI
+# design demo UI
+
+## Gradle
+```gradle
+implementation 'com.github.majorkik:SparkLineLayout:1.0.1'
+implementation 'com.github.bumptech.glide:glide:4.15.1'
+```
 
 ## Login
-![Screenshot_1686539548](https://github.com/code09128/CryptoUI/assets/32324308/57961f69-27ee-4377-82b0-3f9066df784f)
+<!-- ![Screenshot_1686539548](https://github.com/code09128/CryptoUI/assets/32324308/57961f69-27ee-4377-82b0-3f9066df784f) -->
+<div  align="center"> 
+<img src="https://github.com/code09128/CryptoUI/assets/32324308/57961f69-27ee-4377-82b0-3f9066df784f" width="350px"/>
+</div>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -144,7 +153,10 @@ design crypto ui demo
 ```
 
 ## MainPage
-![Screenshot_1686539567](https://github.com/code09128/CryptoUI/assets/32324308/a3f011fe-70c5-4c05-89e1-5fb3661df86d)
+<!-- ![Screenshot_1686539567](https://github.com/code09128/CryptoUI/assets/32324308/a3f011fe-70c5-4c05-89e1-5fb3661df86d) -->
+<div  align="center"> 
+<img src="https://github.com/code09128/CryptoUI/assets/32324308/a3f011fe-70c5-4c05-89e1-5fb3661df86d" width="350px"/>
+</div>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
