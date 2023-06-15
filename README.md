@@ -1,7 +1,4 @@
-# CryptoUI
-design crypto ui demo
-
-# design demo UI
+# design demo UI - CryptoUI
 
 ## Gradle
 ```gradle
